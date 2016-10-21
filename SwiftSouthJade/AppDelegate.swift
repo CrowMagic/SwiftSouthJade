@@ -16,9 +16,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName:UIColor(red: 0/255.0, green: 194/255.0, blue: 113/255.0, alpha: 1)], forState: .Selected)
+        
+        let rootVC = window?.rootViewController as! UITabBarController
+        for VC in rootVC.viewControllers! {
+            let navVC = VC as! UINavigationController
+            //MARK:直接这样写不行
+            // navigationController?.tabBarItem.selectedImage?.imageWithRenderingMode(.AlwaysOriginal)
+            // 要把修改过后的值赋给你想要修改的对象
+            navVC.tabBarItem.selectedImage = navVC.tabBarItem.selectedImage?.imageWithRenderingMode(.AlwaysOriginal)
+            
+        }        
+        
         return true
     }
 
+
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

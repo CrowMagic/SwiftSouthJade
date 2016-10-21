@@ -39,8 +39,7 @@ class ViewController: UIViewController {
             
 
             if fabs(angleBig) > 1 {
-                print("执行了")
-
+              
                 setRotate(angleBig)
                 angleBig = 0.935 * angleBig
             } else {
@@ -106,7 +105,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+      
         setupTopBarTitleView()
         
         //MARK:add background landscape image
@@ -168,6 +167,8 @@ class ViewController: UIViewController {
                 btn.titleEdgeInsets = UIEdgeInsetsMake(-35, -80, 0, 0)
             }
 
+            btn.tag = 100 + index
+            btn.addTarget(self, action: #selector(addClick), forControlEvents: .TouchUpInside)
             btn.setTitle(titleName, forState: .Normal)
             btn.setImage(UIImage(named: titleName), forState: .Normal)
             btn.layer.anchorPoint = CGPointMake(0.5, 1);
@@ -189,18 +190,33 @@ class ViewController: UIViewController {
         centerPoint = CGPointMake(centerX, centerY)
         
         
+        let centerButton = UIButton(type: .Custom)
+        centerButton.center = centerPoint
+        centerButton.bounds = CGRectMake(0, 0, screenWidth*90/320, screenWidth*90/320)
+    
+//        centerButton.backgroundColor = .redColor()
+        centerButton.setImage(UIImage(named: "logo"), forState: .Normal)
+        centerButton.addTarget(self, action: #selector(centerButtonClick), forControlEvents: .TouchUpInside)
         
-//        
-//        CGFloat centerX = ss_screenWidth * 0.5f;
-//        CGFloat centerY = ss_screenHeight * 0.5f - 64;
-//        _centerPoint = CGPointMake(centerX, centerY);//中心点
-//        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-//        btn.bounds = CGRectMake(0, 0, 100, 100);
-//        btn.center = _centerPoint;
-//        [btn addTarget:self action:@selector(backToStartState) forControlEvents:UIControlEventTouchUpInside];
+        let centerBgView = UIView()
+        centerBgView.center = centerPoint
+        centerBgView.bounds = CGRectMake(0, 0, centerButton.bounds.size.width+10, centerButton.bounds.size.width+10)
+        centerBgView.layer.cornerRadius = (centerButton.bounds.size.width+10)/2
+        centerBgView.backgroundColor = .whiteColor()
+        view.addSubview(centerBgView)
+        
+        view.addSubview(centerButton)
 
         
 }
+    
+    func addClick(sender: UIButton) {
+        if sender.tag == 100 {
+            navigationController?.pushViewController(LoginViewController(), animated: true)
+        }
+    }
+  
+    
     
     func setupTopBarTitleView() {
         let barTitleView = UIView.init(frame: CGRectMake(0, 0, 150, 30))
@@ -212,14 +228,17 @@ class ViewController: UIViewController {
     
     }
     
-    
-    
-    
-    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.navigationBar.setBackgroundImage(UIImage(named: "导航条背景@2x.png"), forBarMetrics: .Default)
+        navigationController?.navigationBar.setBackgroundImage(UIImage(named: "titleViewBG"), forBarMetrics: .Default)
 
+    }
+    
+    func centerButtonClick() {
+        UIView.animateWithDuration(0.5) {
+            self.bgImageView.transform = CGAffineTransformMakeRotation(CGFloat(self.angleBig * M_PI/180))
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {

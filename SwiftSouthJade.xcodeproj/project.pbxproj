@@ -8,27 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		86CD018573633D97D94DE710 /* Pods_SwiftSouthJade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A4F26F32B5E2282758D0813 /* Pods_SwiftSouthJade.framework */; };
+		942576031DB869AE00B8EF94 /* PersonalCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942576021DB869AE00B8EF94 /* PersonalCenterViewController.swift */; };
+		942576091DB8AD8500B8EF94 /* UICollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 942576081DB8AD8500B8EF94 /* UICollectionViewWaterfallLayout.m */; };
+		9425760C1DB8B42F00B8EF94 /* ClassifyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9425760A1DB8B42F00B8EF94 /* ClassifyCollectionViewCell.swift */; };
+		9425760D1DB8B42F00B8EF94 /* ClassifyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9425760B1DB8B42F00B8EF94 /* ClassifyCollectionViewCell.xib */; };
 		943186651DB751B900809117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943186641DB751B900809117 /* AppDelegate.swift */; };
 		943186671DB751B900809117 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943186661DB751B900809117 /* ViewController.swift */; };
 		9431866A1DB751B900809117 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 943186681DB751B900809117 /* Main.storyboard */; };
 		9431866C1DB751B900809117 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9431866B1DB751B900809117 /* Assets.xcassets */; };
 		9431866F1DB751B900809117 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9431866D1DB751B900809117 /* LaunchScreen.storyboard */; };
 		943186771DB756C000809117 /* ClassifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943186761DB756C000809117 /* ClassifyViewController.swift */; };
-		943186791DB7592600809117 /* 标题.png in Resources */ = {isa = PBXBuildFile; fileRef = 943186781DB7592600809117 /* 标题.png */; };
-		9431867B1DB7599E00809117 /* 导航条背景@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9431867A1DB7599E00809117 /* 导航条背景@2x.png */; };
-		9431867D1DB75C9E00809117 /* 大背景.png in Resources */ = {isa = PBXBuildFile; fileRef = 9431867C1DB75C9E00809117 /* 大背景.png */; };
-		9431867F1DB761DA00809117 /* 圆盘.png in Resources */ = {isa = PBXBuildFile; fileRef = 9431867E1DB761DA00809117 /* 圆盘.png */; };
 		943186811DB7626100809117 /* DrawCircleLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943186801DB7626100809117 /* DrawCircleLine.swift */; };
-		943186881DB7751C00809117 /* 大师.png in Resources */ = {isa = PBXBuildFile; fileRef = 943186821DB7751C00809117 /* 大师.png */; };
-		943186891DB7751C00809117 /* 店铺.png in Resources */ = {isa = PBXBuildFile; fileRef = 943186831DB7751C00809117 /* 店铺.png */; };
-		9431868A1DB7751C00809117 /* 活动.png in Resources */ = {isa = PBXBuildFile; fileRef = 943186841DB7751C00809117 /* 活动.png */; };
-		9431868B1DB7751C00809117 /* 鉴赏.png in Resources */ = {isa = PBXBuildFile; fileRef = 943186851DB7751C00809117 /* 鉴赏.png */; };
-		9431868C1DB7751C00809117 /* 南玉.png in Resources */ = {isa = PBXBuildFile; fileRef = 943186861DB7751C00809117 /* 南玉.png */; };
-		9431868D1DB7751C00809117 /* 品牌.png in Resources */ = {isa = PBXBuildFile; fileRef = 943186871DB7751C00809117 /* 品牌.png */; };
+		948228A01DB9F8DD000EFC21 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9482289F1DB9F8DD000EFC21 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6A4F26F32B5E2282758D0813 /* Pods_SwiftSouthJade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSouthJade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		942576021DB869AE00B8EF94 /* PersonalCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalCenterViewController.swift; sourceTree = "<group>"; };
+		942576061DB8AD8500B8EF94 /* SwiftSouthJade-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftSouthJade-Bridging-Header.h"; sourceTree = "<group>"; };
+		942576071DB8AD8500B8EF94 /* UICollectionViewWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewWaterfallLayout.h; sourceTree = "<group>"; };
+		942576081DB8AD8500B8EF94 /* UICollectionViewWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewWaterfallLayout.m; sourceTree = "<group>"; };
+		9425760A1DB8B42F00B8EF94 /* ClassifyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifyCollectionViewCell.swift; sourceTree = "<group>"; };
+		9425760B1DB8B42F00B8EF94 /* ClassifyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClassifyCollectionViewCell.xib; sourceTree = "<group>"; };
 		943186611DB751B700809117 /* SwiftSouthJade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSouthJade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		943186641DB751B900809117 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		943186661DB751B900809117 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,17 +38,8 @@
 		9431866E1DB751B900809117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		943186701DB751B900809117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		943186761DB756C000809117 /* ClassifyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifyViewController.swift; sourceTree = "<group>"; };
-		943186781DB7592600809117 /* 标题.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "标题.png"; sourceTree = "<group>"; };
-		9431867A1DB7599E00809117 /* 导航条背景@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航条背景@2x.png"; sourceTree = "<group>"; };
-		9431867C1DB75C9E00809117 /* 大背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "大背景.png"; sourceTree = "<group>"; };
-		9431867E1DB761DA00809117 /* 圆盘.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "圆盘.png"; sourceTree = "<group>"; };
 		943186801DB7626100809117 /* DrawCircleLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawCircleLine.swift; sourceTree = "<group>"; };
-		943186821DB7751C00809117 /* 大师.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "大师.png"; sourceTree = "<group>"; };
-		943186831DB7751C00809117 /* 店铺.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "店铺.png"; sourceTree = "<group>"; };
-		943186841DB7751C00809117 /* 活动.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "活动.png"; sourceTree = "<group>"; };
-		943186851DB7751C00809117 /* 鉴赏.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "鉴赏.png"; sourceTree = "<group>"; };
-		943186861DB7751C00809117 /* 南玉.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "南玉.png"; sourceTree = "<group>"; };
-		943186871DB7751C00809117 /* 品牌.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "品牌.png"; sourceTree = "<group>"; };
+		9482289F1DB9F8DD000EFC21 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B84279B0D24EEB44EE40F6F0 /* Pods-SwiftSouthJade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSouthJade.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSouthJade/Pods-SwiftSouthJade.debug.xcconfig"; sourceTree = "<group>"; };
 		F160AD7E6957C4D363AD9757 /* Pods-SwiftSouthJade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSouthJade.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSouthJade/Pods-SwiftSouthJade.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,22 +96,19 @@
 			children = (
 				943186641DB751B900809117 /* AppDelegate.swift */,
 				943186661DB751B900809117 /* ViewController.swift */,
-				943186801DB7626100809117 /* DrawCircleLine.swift */,
-				943186821DB7751C00809117 /* 大师.png */,
-				943186831DB7751C00809117 /* 店铺.png */,
-				943186841DB7751C00809117 /* 活动.png */,
-				943186851DB7751C00809117 /* 鉴赏.png */,
-				943186861DB7751C00809117 /* 南玉.png */,
-				943186871DB7751C00809117 /* 品牌.png */,
-				943186781DB7592600809117 /* 标题.png */,
-				9431867A1DB7599E00809117 /* 导航条背景@2x.png */,
-				9431867C1DB75C9E00809117 /* 大背景.png */,
-				9431867E1DB761DA00809117 /* 圆盘.png */,
 				943186761DB756C000809117 /* ClassifyViewController.swift */,
+				9482289F1DB9F8DD000EFC21 /* LoginViewController.swift */,
+				9425760A1DB8B42F00B8EF94 /* ClassifyCollectionViewCell.swift */,
+				9425760B1DB8B42F00B8EF94 /* ClassifyCollectionViewCell.xib */,
+				942576021DB869AE00B8EF94 /* PersonalCenterViewController.swift */,
+				943186801DB7626100809117 /* DrawCircleLine.swift */,
 				943186681DB751B900809117 /* Main.storyboard */,
+				942576071DB8AD8500B8EF94 /* UICollectionViewWaterfallLayout.h */,
+				942576081DB8AD8500B8EF94 /* UICollectionViewWaterfallLayout.m */,
 				9431866B1DB751B900809117 /* Assets.xcassets */,
 				9431866D1DB751B900809117 /* LaunchScreen.storyboard */,
 				943186701DB751B900809117 /* Info.plist */,
+				942576061DB8AD8500B8EF94 /* SwiftSouthJade-Bridging-Header.h */,
 			);
 			path = SwiftSouthJade;
 			sourceTree = "<group>";
@@ -186,18 +175,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9431868D1DB7751C00809117 /* 品牌.png in Resources */,
-				9431868A1DB7751C00809117 /* 活动.png in Resources */,
-				943186881DB7751C00809117 /* 大师.png in Resources */,
-				9431867F1DB761DA00809117 /* 圆盘.png in Resources */,
-				943186791DB7592600809117 /* 标题.png in Resources */,
+				9425760D1DB8B42F00B8EF94 /* ClassifyCollectionViewCell.xib in Resources */,
 				9431866F1DB751B900809117 /* LaunchScreen.storyboard in Resources */,
-				9431867D1DB75C9E00809117 /* 大背景.png in Resources */,
 				9431866C1DB751B900809117 /* Assets.xcassets in Resources */,
-				9431868B1DB7751C00809117 /* 鉴赏.png in Resources */,
-				943186891DB7751C00809117 /* 店铺.png in Resources */,
-				9431868C1DB7751C00809117 /* 南玉.png in Resources */,
-				9431867B1DB7599E00809117 /* 导航条背景@2x.png in Resources */,
 				9431866A1DB751B900809117 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +238,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				943186671DB751B900809117 /* ViewController.swift in Sources */,
+				9425760C1DB8B42F00B8EF94 /* ClassifyCollectionViewCell.swift in Sources */,
+				942576091DB8AD8500B8EF94 /* UICollectionViewWaterfallLayout.m in Sources */,
 				943186651DB751B900809117 /* AppDelegate.swift in Sources */,
+				948228A01DB9F8DD000EFC21 /* LoginViewController.swift in Sources */,
 				943186771DB756C000809117 /* ClassifyViewController.swift in Sources */,
 				943186811DB7626100809117 /* DrawCircleLine.swift in Sources */,
+				942576031DB869AE00B8EF94 /* PersonalCenterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,10 +360,13 @@
 			baseConfigurationReference = B84279B0D24EEB44EE40F6F0 /* Pods-SwiftSouthJade.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftSouthJade/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hycz.SwiftSouthJade;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftSouthJade/SwiftSouthJade-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -388,10 +375,12 @@
 			baseConfigurationReference = F160AD7E6957C4D363AD9757 /* Pods-SwiftSouthJade.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftSouthJade/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hycz.SwiftSouthJade;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftSouthJade/SwiftSouthJade-Bridging-Header.h";
 			};
 			name = Release;
 		};

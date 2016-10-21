@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1747" y="-446"/>
+            <point key="canvasLocation" x="1695" y="-672"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="N0K-fn-2R3">
@@ -37,11 +37,12 @@
                     <connections>
                         <segue destination="las-ek-hed" kind="relationship" relationship="viewControllers" id="RrP-dm-y2H"/>
                         <segue destination="i6v-Eu-yVT" kind="relationship" relationship="viewControllers" id="0t6-cE-Ks6"/>
+                        <segue destination="hIW-Li-kg4" kind="relationship" relationship="viewControllers" id="rk2-ud-jm1"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w7K-w9-gjm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="279" y="-152"/>
+            <point key="canvasLocation" x="235" y="236"/>
         </scene>
         <!--分类-->
         <scene sceneID="8LB-ba-LUi">
@@ -60,13 +61,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BPu-4o-bxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1747" y="325"/>
+            <point key="canvasLocation" x="1789" y="116"/>
         </scene>
-        <!--Item-->
+        <!--首页-->
         <scene sceneID="cBh-cK-hTn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="las-ek-hed" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="XUs-SC-Zcv"/>
+                    <tabBarItem key="tabBarItem" title="首页" image="shouye" selectedImage="shouyeClick" id="XUs-SC-Zcv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NnF-Tt-J59">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -79,13 +80,32 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EP6-d9-EW1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1003" y="-446"/>
+            <point key="canvasLocation" x="1042" y="-672"/>
         </scene>
-        <!--Item-->
+        <!--个人中心-->
+        <scene sceneID="vuJ-2B-aD2">
+            <objects>
+                <viewController id="pNx-G8-Lce" customClass="PersonalCenterViewController" customModule="SwiftSouthJade" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1T0-L6-w83"/>
+                        <viewControllerLayoutGuide type="bottom" id="XSe-kA-DCq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3db-kU-A4W">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="个人中心" id="d2G-pD-Oud"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y7d-ie-RmT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1789" y="779"/>
+        </scene>
+        <!--分类-->
         <scene sceneID="N5N-3x-KCf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i6v-Eu-yVT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="hvA-oK-Ky3"/>
+                    <tabBarItem key="tabBarItem" title="分类" image="fenlei" selectedImage="fenleiClick" id="hvA-oK-Ky3"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="j1R-Ct-ghD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -98,7 +118,34 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B4N-N9-9jU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1019" y="325"/>
+            <point key="canvasLocation" x="1084" y="116"/>
+        </scene>
+        <!--个人-->
+        <scene sceneID="LcA-8z-7kS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hIW-Li-kg4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="个人" image="my" selectedImage="myClick" id="S6o-gJ-L0I"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wfp-Sf-VQY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pNx-G8-Lce" kind="relationship" relationship="rootViewController" id="fze-yk-6jQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3co-Jp-i6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1084" y="779"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="fenlei" width="30" height="30"/>
+        <image name="fenleiClick" width="30" height="30"/>
+        <image name="my" width="30" height="30"/>
+        <image name="myClick" width="30" height="30"/>
+        <image name="shouye" width="30" height="30"/>
+        <image name="shouyeClick" width="30" height="30"/>
+    </resources>
 </document>
